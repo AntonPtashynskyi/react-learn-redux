@@ -1,17 +1,20 @@
+import { Routes, Route } from 'react-router';
+
+import { NavigationView } from './views/NavigationView';
+import { HomeView } from './views/HomeView';
+import { VanillaView } from './views/VanillaView';
+import { ToolkitView } from './views/ToolkitView';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<NavigationView />}>
+          <Route index element={<HomeView />} />
+          <Route path="redux" element={<VanillaView />} />
+          <Route path="toolkit" element={<ToolkitView />} />
+        </Route>
+      </Routes>
+    </>
   );
 };
