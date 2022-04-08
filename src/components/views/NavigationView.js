@@ -19,15 +19,7 @@ const NavigationView = ({ children }) => {
             isActive ? 'navLink navLink--active' : 'navLink'
           }
         >
-          Vanilla Redux
-        </NavLink>
-        <NavLink
-          to="toolkit"
-          className={({ isActive }) =>
-            isActive ? 'navLink navLink--active' : 'navLink'
-          }
-        >
-          Redux toolkit
+          Vanilla Redux + toolkit
         </NavLink>
       </nav>
       <Outlet />

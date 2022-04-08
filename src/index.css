@@ -39,3 +39,17 @@ code {
   background-color: rgba(21, 134, 21, 0.863);
   color: white;
 }
+
+.list-item {
+  padding: 10px;
+
+  border: 1px solid black;
+}
+
+.input {
+  margin-left: 10px;
+}
+
+.input:checked + .text {
+  text-decoration: line-through;
+}
